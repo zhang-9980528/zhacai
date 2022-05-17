@@ -1,0 +1,35 @@
+<import src="../../dist/wexUI/templates/actionsheet/actionsheet" />
+<view class="container">
+  <view class="example-title">我的日志</view>
+  <view class="example-content">
+  <!-- 标题 -->
+    <view class="wexui-article">
+      <view class="h3"><input type="text" bindinput="getInputValue" placeholder="标题内容" value="{{title || log.title}}"/></view>
+      <view class="divideLine"></view>
+      <!-- 文章第一部分 -->
+      <view class="article-section">
+        <view class="example-content">
+            <textarea class="textarea-content" bindblur="getTextareaValue" maxlength="2000">{{article || log.article}}</textarea>
+        </view>
+        <view class="add-image" bindtap="addImage">+</view>
+        <view class="self-defined">
+          <view class="custom-tag" bindtap="tagChange" wx:if="{{!fake}}">
+            <view class="tagitem">
+              <view class="wexui-tags tags-primary"><input type="text"  class="lable-input" value="添加" disabled /></view>
+            </view>
+          </view>
+          <view class="custom-tag" wx:if="{{fake}}">
+            <!-- <v-lable /> -->
+            <v-lable lable="{{exClass[0]}}" bind:sendLables="getLables" value="{{defaultVal[0]}}" lablefake="{{fake}}" fake="{{fake}}"/>
+            <v-lable lable="{{exClass[1]}}" bind:sendLables="getLables" value="{{defaultVal[1]}}" lablefake="{{fake}}" />
+            <v-lable lable="{{exClass[2]}}" bind:sendLables="getLables" value="{{defaultVal[2]}}" lablefake="{{fake}}"/>
+          </view>
+          <view class="example-button">
+              <view class="btn btn-default btn-block change-button" bindtap="tapShowActionsheet">下一步</view>
+          </view>
+          <template is="wexui-actionsheet" data="{{Actionsheet}}"></template>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<!--components/startRun/components/tabList/tabList.wxml-->
+<view class="container">
+  <view class="btn" bind:tap="chooseType"></view>
+  <view class="list {{!dropdown?'showList':''}}">
+    <text class="me wx:if='{{default==1?'listitem':''}}'" id="c1" data-text="{{typeList[0]}}" bind:tap="chooseUnit1">{{typeList[0]}}</text>
+    <text class="me wx:if='{{default==2?'listitem':''}}'" id="c2" data-text="{{typeList[1]}}" bind:tap="chooseUnit2">{{typeList[1]}}</text>
+    <text class="me wx:if='{{default==3?'listitem':''}}'" id="c3" data-text="{{typeList[2]}}" bind:tap="chooseUnit3">{{typeList[2]}}</text>
+  </view>
+</view>
+

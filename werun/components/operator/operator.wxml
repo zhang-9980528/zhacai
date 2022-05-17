@@ -1,0 +1,6 @@
+<!--components/operator/operator.wxml-->
+<view class="operator">
+  <image class="operator-symbol {{shake?'animated shake':''}}" data-id="like" bindtap="clickOrNot" src=" {{likeStatus||like_status=='1'?allikeSrc:likeSrc}}"></image>
+  <image class="operator-symbol" data-id="msg" bindtap="commentMsg" src="{{message}}"></image>
+  <image class="operator-symbol {{pulse?'animated pulse':''}}" data-id="tread" bindtap="clickOrNot" src=" {{like_status=='0'?altreadSrc:treadSrc}} "></image>
+</view>

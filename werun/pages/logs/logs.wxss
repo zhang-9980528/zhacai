@@ -1,0 +1,18 @@
+@import "../../dist/wexUI/wexUI.wxss";
+.pubdate{
+  position: relative;
+  left: 336rpx;
+}
+.changeList{
+  position: relative;
+  transform-origin: left;
+  transform: scale3d(0.9,1,1);
+  transition:all .2s linear 0s;
+}
+.deleteSelect{
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  left: 770rpx;
+  bottom: 110rpx;
+}

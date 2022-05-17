@@ -1,0 +1,5 @@
+/* components/deleteBtn/index.wxss */
+.select image{
+  width: 40rpx;
+  height: 40rpx;
+}

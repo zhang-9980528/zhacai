@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="topTap">
+    <view class="run {{start?'runstart':''}}" bind:tap="runStart">开始跑步</view>
+    <view class="line"></view>
+    <view class="run {{start?'':'runstart'}}" bind:tap="commentStart" start='{{start}}'>评论专区</view>
+  </view>
+  <v-run class="{{start?'':'hide'}}"/>
+  <v-comment class="{{start?'hide':''}}"/>
+</view>

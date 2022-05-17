@@ -1,0 +1,23 @@
+/* components/editList/editList.wxss */
+.list{
+  width: 148rpx;
+  height: 126rpx;
+  border: 1rpx solid black;
+  position: absolute;
+  z-index: 99;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.listitem{
+  width: 148rpx;
+  height: 58rpx;
+  border-bottom: 1rpx solid black;
+  text-align: center;
+  line-height: 58rpx;
+}
+.listitem:last-of-type{
+  border-bottom:none;
+}

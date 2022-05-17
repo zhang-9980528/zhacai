@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "v-run":"/components/startRun/startRun",
+    "v-comment":"/components/comments/comments"
+  },
+  "enablePullDownRefresh":true
+}

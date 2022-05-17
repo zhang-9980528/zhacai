@@ -1,0 +1,31 @@
+.topTap{
+  width: 100%;
+  height: 114rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.line{
+  width: 4rpx;
+  height: 100%;
+  background-color:#ff531a;
+}
+.run{
+  font-size: 48rpx;
+  color: #998f8f;
+  letter-spacing: 8rpx;
+  font-weight: 700;
+  line-height: 150rpx;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-bottom: 8rpx solid #998f8f;
+}
+.runstart{
+  color: #ff531a;
+  border-bottom: 8rpx solid #ff531a;
+}
+.hide{
+  display: none;
+}

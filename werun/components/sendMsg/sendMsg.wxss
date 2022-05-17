@@ -1,0 +1,120 @@
+/* components/sendMsg/sendMsg.wxss */
+@import "../../dist/wexUI/wexUI.wxss";
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: 16rpx;
+}
+.userDiv{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 26rpx;
+}
+.avatar{
+  width: 80rpx;
+  height: 80rpx;
+  float: left;
+}
+.nickname{
+  font-size: 36rpx;
+  float: left;
+  padding: 12rpx 0 0 16rpx;
+}
+.commentDiv{
+  padding: 0 10rpx 30rpx 10rpx;
+}
+.comment{
+  font-size: 36rpx;
+}
+/* 字体定义 */
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1641614946485') format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-aixin:before {
+  content: "\e60f";
+  position: relative;
+  top: -78rpx;
+  left: 332rpx;
+  font-size: 62rpx;
+}
+.aixin:before{
+  content: "\e60f";
+  color: red;
+  position: relative;
+  top: -78rpx;
+  left: 332rpx;
+  font-size: 62rpx;
+}
+.search-textarea{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+}
+.searchbox{
+  width: 94%;
+}
+.submitbox{
+  width: 500rpx;
+}
+.wexui-searchbox {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  transition: all 0.2s;
+  font-size: 28rpx;
+}
+.confirm{
+  background-color: #ff531a;
+  color: #fff;
+  width: 60% !important;
+  height: 76rpx !important;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+.wexui-searchbox .searchbox-input {
+  padding: 16rpx 18rpx;
+  flex: 1;
+  background: #fff;
+  -webkit-box-flex: 1;
+}
+
+.wexui-searchbox .searchbox-input form input {
+  text-align: left;
+}
+
+.wexui-searchbox .searchbox-input form input:not(:first-child) {
+  padding-left: 40rpx;
+}
+.form{
+  height: 80rpx;
+}
+.formDiv{
+  width: 116%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form .formDiv view{
+  width: 46%;
+}
+.time{
+  position: relative;
+  top: -150rpx;
+  left: 476rpx;
+}
+.tip{
+  font-size: 30rpx;
+  display: inline-block;
+  height: 44rpx;
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "v-lable" : "../../components/lable/lable"
+  },
+  "enablePullDownRefresh":true
+}

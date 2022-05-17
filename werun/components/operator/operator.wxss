@@ -1,0 +1,16 @@
+/* components/operator/operator.wxss */
+.operator{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 106%;
+  height: 80rpx;
+  position: relative;
+  left: -20rpx;
+  border-top: 4rpx solid #8b8b8b; 
+  border-bottom: 4rpx solid #8b8b8b; 
+}
+.operator-symbol{
+  width: 50rpx;
+  height: 50rpx;
+}

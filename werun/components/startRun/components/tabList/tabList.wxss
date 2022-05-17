@@ -1,0 +1,44 @@
+/* components/startRun/components/tabList/tabList.wxss */
+.container{
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+.btn{
+  width: 40rpx;
+  height: 48rpx;
+  position: absolute;
+  top: -34rpx;
+  left: -20rpx;
+  z-index: 9999;
+}
+.list{
+  width: 44rpx;
+  height: 142rpx;
+  border: 1px solid rgb(99, 98, 98,0.2);
+  position: relative;
+  top: 28rpx;
+  left: -36rpx;
+  transform: translateY(-180rpx);
+  opacity: 0;
+}
+.me{
+  display: inline-block;
+  width: 44rpx;
+  height: 48rpx;
+  text-align: center;
+  line-height: 46rpx;
+  border-bottom: 1px solid rgb(99, 98, 98,0.2);
+  box-sizing: border-box;
+}
+.me:last-child{
+  border-bottom:none;
+}
+.showList{
+  transform: translateY(0);
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+.listitem{
+  background-color: rgba(167, 164, 164, 0.2);
+}

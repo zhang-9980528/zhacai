@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "我的日志",
+  "usingComponents": {
+    "v-btn":"../../components/articleBtn/articleBtn",
+    "v-edit":"../../components/editList/editList",
+    "v-select":"../../components/deleteBtn/deleteBtn"
+  },
+  "enablePullDownRefresh":true
+}

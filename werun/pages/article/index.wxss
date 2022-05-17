@@ -1,0 +1,105 @@
+/* pages/article/index.wxss */
+@import "../../dist/wexUI/wexUI.wxss";
+.container {
+  height: 100%;
+  padding: 20rpx;
+  margin: 0px;
+}
+.container .example-content {
+  margin-top: 20rpx;
+  background: #fff;
+  padding: 10rpx;
+  border-right: 6rpx;
+  box-shadow: 0px 2px 10px #ddd;
+  font-size: 30rpx;
+}
+.example-title{
+  text-align: center;
+  font-size: 36rpx;
+}
+.divideLine{
+  margin: 22rpx 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right,rgb(101,44,194) 0%,rgb(255,83,26) 75%,transparent 100%);
+  background-size: 26px 1px;
+  background-repeat: repeat-x;
+}
+.textarea-content{
+  width: 100%;
+  height: 800rpx;
+  font-size: 48rpx;
+}
+.self-defined{
+  width: 80%;
+  height: 150rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.custom-tag{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.custom-btn{
+  width: 300rpx;
+  display: flex;
+  align-items: center;
+}
+.custom-btn>button{
+  width: 60rpx;
+  height: 58rpx;
+  font-size: 14px;
+  font-weight: 400;
+}
+.save-btn{
+  margin-right: 18rpx;
+  justify-self: flex-start;
+}
+.submit-btn{
+  color: #fff;
+  background-color: #57a3f3;
+  justify-self: flex-end;
+}
+
+.cancle{
+  display: inline-block;
+  width: 32rpx;
+  height: 44rpx;
+  font-size: 26rpx;
+  position: relative;
+  top: -52rpx;
+  left: 80rpx;
+  z-index:999;
+  text-align: center;
+  color: #fff;
+}
+.wexui-tags{
+  font-size: 24rpx;
+  width: 98rpx;
+  text-align: center;
+  border-radius: 16%;
+}
+.add-image{
+  width: 100%;
+  height: 250rpx;
+  border: 1px solid #fff;
+  background-color: #ddd;
+  font-size: 200rpx;
+  text-align: center;
+}
+.example-button{
+  position: absolute;
+  border: none;
+  left: 76%;
+  bottom: -17%;
+}
+.change-button{
+  border-radius: 16rpx !important;
+  background-color: #2d8cf0 !important;
+  color: #fff;
+  height: 66rpx;
+  line-height: 66rpx;
+}

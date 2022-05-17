@@ -1,0 +1,4 @@
+<view class="topbtn">
+  <view class="selectbtn" bind:tap="editArticle"><image src="{{multibtn}}"></image></view>
+  <view class="selectbtn" bind:tap="addArticle"><image src="{{addbtn}}"></image></view>
+</view>

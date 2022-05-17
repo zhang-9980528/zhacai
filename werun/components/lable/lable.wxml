@@ -1,0 +1,6 @@
+<!--components/lable/lable.wxml-->
+<view class="tagitem">
+  <view class="wexui-tags {{lable}} {{lablefake?'animated pulse':''}}">
+    <input bindblur="createLables" class="lable-input" type="text" value="{{value}}"/>
+  </view>
+</view>

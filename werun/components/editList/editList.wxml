@@ -1,0 +1,5 @@
+<!--components/editList/editList.wxml-->
+<view class="list" wx:if="{{selectEdit}}">
+  <view class="listitem"><text>分享选中</text></view>
+  <view class="listitem"><text>删除选中</text></view>
+</view>

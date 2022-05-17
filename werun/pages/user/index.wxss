@@ -1,0 +1,29 @@
+/* pages/user/index.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.head{
+  width: 288rpx;
+  height: 288rpx;
+  border-radius: 50%;
+}
+.user{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.item{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 66rpx;
+  margin: 38rpx;
+}
+.item view{
+  padding-left: 20rpx;
+}

@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "v-operator":"../../components/operator/operator",
+    "v-sendMsg":"../../components/sendMsg/sendMsg",
+    "v-like":"../../components/like/like"
+  },
+  "enablePullDownRefresh":true
+}

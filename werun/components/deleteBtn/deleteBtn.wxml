@@ -1,0 +1,2 @@
+<!--components/deleteBtn/index.wxml-->
+<view class="select" bind:tap="selected"><image src="{{selectOrNot?selectedUrl:selectUrl}}"></image></view>

@@ -1,0 +1,13 @@
+/* components/articleBtn/articleBtn.wxss */
+.topbtn{
+  width: 95%;
+  height: 78rpx;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:20rpx;
+}
+.selectbtn image{
+  width: 66rpx;
+  height: 66rpx;
+}

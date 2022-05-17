@@ -1,0 +1,62 @@
+/* pages/feedback/index.wxss */
+/* components/feedback/feedback.wxss */
+.example-content{
+  width: 100%;
+  height: 60%;
+  background:rgba(204, 204, 204, .6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.input-textarea{
+  width: 98%;
+  height: 622rpx;
+  text-indent: 48rpx;
+  font-size: 38rpx;
+  line-height: 52rpx;
+  padding-top: 20rpx;
+}
+.example-content button{
+  width: 120rpx;
+  height: 110rpx;
+  font-size: 48rpx;
+  background-color: #57a3f3;
+  border-radius: 4%;
+  position: relative;
+  bottom: -30rpx;
+  line-height: 88rpx;
+  letter-spacing: 22rpx;
+}
+.feedbackContent{
+  width: 100%;
+  height: auto;
+}
+.feedbackItem{
+  width: 100%;
+  height: 80rpx;
+  margin-top: 44rpx;
+  background-color: #fff;
+  font-size: 60rpx;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20rpx;
+}
+.feedbackItem text{
+  font-size: 32rpx;
+}
+.time{
+  color: #aaa;
+  padding-right: 40rpx;
+}
+.delete{
+  position: relative;
+  top: -8rpx;
+  left: -48rpx;
+  width: 108rpx;
+  text-align: center;
+}
+.delete image{
+  width: 30rpx;
+  height: 30rpx;
+}

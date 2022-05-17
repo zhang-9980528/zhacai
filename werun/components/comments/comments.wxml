@@ -1,0 +1,28 @@
+<!--components/comments/comments.wxml-->
+<view class="container">
+  <view class="comment-item" wx:if="{{start}}">
+    <view class="introduction">
+      <block wx:for="{{comments}}" wx:key="{{index}}">
+      <image class="avatar" bindtap="openUser" src="{{avatarSrc}}"></image>
+      <text class="nickname">{{name}}</text>
+      <view class="content">
+      <text>{{item.content}}</text>
+      </view>
+      <v-operator like_count="{{item.like_count}}" like_status="{{item.like_status}}" comment_id="{{item._id}}" />
+      <view class="time">{{item.updatedAt}}</view>
+      </block>
+      </view>
+    <!-- 输入框 -->
+    <view class="search-textarea">
+      <view class="wexui-searchbox searchbox">
+        <view class="searchbox-input searchbox">
+          <form class="form" bindsubmit="getComment">
+          <view class="formDiv">
+            <view><input class="submitbox" type="text" placeholder="请输入评论内容" name="input"/></view>
+            <view><button formType="submit" class="confirm">确认</button></view></view>
+          </form>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

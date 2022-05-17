@@ -1,0 +1,17 @@
+<view class="container">
+  <button class="login-head" open-type="getUserInfo" bindtap="getUserInfo">
+      <image src="{{showUserMsg?yLoginHead:nLoignHead}}" />
+  </button>
+  <v-shade modal="my-modal" touchOrNot="{{!touchOrNot}}" />
+  <view class="my-list">
+    <view class="listitem" bindtap="getMylogs">我的日志
+      <view class="triangle"></view>
+    </view>
+    <view class="listitem" bindtap="getMycomment">我的评论
+      <view class="triangle"></view>
+    </view>
+    <view class="listitem" bind:tap="navigetoFed">意见反馈
+      <view class="triangle"></view>
+    </view>
+  </view>
+</view>

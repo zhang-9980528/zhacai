@@ -1,0 +1,2 @@
+<!--components/shade/shade.wxml-->
+<view class="shade modal" hidden="{{touchOrNot}}"></view>

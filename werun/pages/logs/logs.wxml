@@ -1,0 +1,31 @@
+<v-btn bind:editArticle="editArticle"/>
+<v-edit selectEdit="{{selectEdit}}" hidden="{{selectEdit}}"/>
+<view class="example-content">
+    <view class="wexui-searchbox">
+        <view class="searchbox-input">
+            <icon type="search" size="16" />
+            <input type="text" placeholder="搜索标签" />
+        </view>
+    </view>
+</view>
+<view class="example-content" class="{{selectEdit?'changeList':''}}">
+  <block wx:for="{{logs}}" wx:key="{{index}}">
+  <view class="wexui-panel" bindtap="editLog" data-id="{{item._id}}">
+    <view class="panel-logo">
+      <image src="{{item.image_url}}" />
+    </view>
+    <view class="panel-content">
+      <view class="panel-title">
+        <view class="example-content">
+            <view class="wexui-tags tags-primary">希望</view>
+            <view class="wexui-tags tags-success">情感</view>
+            <view class="wexui-tags tags-warn">方法</view>
+        </view>
+      </view>
+      <view class="panel-desc">{{item.article}}</view>
+      <view class="pubdate">{{item.updatedAt}}</view>
+    </view>
+  </view>
+  <v-select class="deleteSelect" bindtap="deleteLogs" data-id="{{item._id}}"/>
+  </block>
+</view>

@@ -1,0 +1,4 @@
+@import "dist/wexUI/wexUI.wxss";
+.container {
+  height: 100%;
+} 

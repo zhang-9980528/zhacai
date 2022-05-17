@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "v-list":"/components/startRun/components/tabList/tabList",
+    "v-shade":"/components/shade/shade"
+  }
+}

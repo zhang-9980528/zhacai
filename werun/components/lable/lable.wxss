@@ -1,0 +1,16 @@
+/* components/lable/lable.wxss */
+@import "../../dist//wexUI//wexUI.wxss";
+.tagitem{
+  width: 118rpx;
+  height: 62rpx;
+}
+.wexui-tags{
+  font-size: 24rpx;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.lable-input{
+  color: #fff;
+  height: 38rpx;
+  font-size: 30rpx;
+}

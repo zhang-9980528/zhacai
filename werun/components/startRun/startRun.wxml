@@ -1,0 +1,24 @@
+
+<!--components/startRun/startRun.wxml-->
+  <view class="container">
+    <!-- 跳转跑步 -->
+    <view class="start" bind:tap="touchScreen">
+      <v-shade modal="my-modal" touchOrNot="{{!touchOrNot}}"/>
+      <image src="{{img}}" />
+    </view>
+    <!-- 选择时间和路程，未实现 -->
+    <view class="goal">
+      <view class="input-number size-big">
+          <label class="input-number-label" bindtap="tapMinus" bind:longpress="tapMinus" bind:touchend="tapEnd" data-tag="tminus">-</label>
+          <input type="text" decode value="{{timegoal}} {{timeUnit}}" bind:input="setTimegoal" class="input-number-input"/>
+          <v-list class="adjust" typeList="{{timeList}}" bind:myEvent="onGettunit"/>
+          <label class="input-number-label" bindtap="tapPlus" bind:longpress="tapPlus" bind:touchend="tapEnd" data-tag="tplus">+</label>
+      </view>
+      <view class="input-number size-big">
+          <label class="input-number-label" bindtap="tapMinus" bind:longpress="tapMinus" bind:touchend="tapEnd" data-tag="dminus">-</label>
+          <input type="text" decode="{{true}}" value="{{distancegoal}} {{distanceUnit}}" bind:input="setDistancegoal" class="input-number-input"/>
+          <v-list class="adjust" typeList="{{distanceList}}" bind:myEvent="onGetdunit" />
+          <label class="input-number-label" bindtap="tapPlus" bind:longpress="tapPlus" bind:touchend="tapEnd" data-tag="dplus">+</label>
+      </view>
+    </view>
+  </view>
